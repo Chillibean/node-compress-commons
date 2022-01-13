@@ -1,18 +1,18 @@
 {
-  "name": "compress-commons",
+  "name": "@chillibean/compress-commons",
   "version": "4.1.1",
   "description": "a library that defines a common interface for working with archive formats within node",
-  "homepage": "https://github.com/archiverjs/node-compress-commons",
+  "homepage": "https://github.com/Chillibean/node-compress-commons",
   "author": {
     "name": "Chris Talkington",
     "url": "http://christalkington.com/"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/archiverjs/node-compress-commons.git"
+    "url": "git+https://github.com/Chillibean/node-compress-commons.git"
   },
   "bugs": {
-    "url": "https://github.com/archiverjs/node-compress-commons/issues"
+    "url": "https://github.com/Chillibean/node-compress-commons/issues"
   },
   "license": "MIT",
   "main": "lib/compress-commons.js",
@@ -24,6 +24,10 @@
   },
   "scripts": {
     "test": "mocha --reporter dot"
+  },
+  "publishConfig": {
+    "cache": "~/.npm",
+    "registry": "https://npm.pkg.github.com"
   },
   "dependencies": {
     "buffer-crc32": "^0.2.13",
